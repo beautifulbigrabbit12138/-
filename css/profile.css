@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "breath";
+  src: url("../font/NatureBreath.ttf") format("truetype");
+}
+  .profile-container {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: auto;
+    color: white;
+  }
+  .title {
+    font-family: "breath";
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+  }
+  .carousel {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 45vh; 
+    justify-content: center;
+  }
+
+  .box {
+      flex: 1;
+      overflow: hidden;
+      transition: 0.5s;
+      margin: 0 2%;
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+      line-height: 0;
+  }
+
+  .box > img {
+      width: 200%;
+      height: calc(100% - 10vh);
+      object-fit: cover;
+      transition: 0.5s; 
+  }
+
+  /* .box > span {
+      font-size: 3.8vh;
+      display: block;
+      text-align: center;
+      height: 10vh;
+      line-height: 2.6;
+  } */
+
+  .box:hover {
+      flex: 1 1 50%;
+  }
+
+  .box:hover > img {
+      width: 100%;
+      height: 100%;
+  }
+
+
+  .side-buttons {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw; /* 使用视窗宽度的百分比设置内边距 */
+    border-radius: 0.5vw; /* 使用视窗宽度的百分比设置边框半径 */
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1); /* 使用视窗宽度的百分比设置阴影 */
+}
+.bgm-button{
+    background-image: url('../images/Icon-Mute.png');
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.side-buttons button {
+    margin-bottom: 1vw;
+    /* padding: 0.5vw 0.5vw; */
+    border: none;
+    border-radius: 0.5vw; 
+    background-color: #93301C;
+    color: white;
+    font-size: 1vw; /* 使用视窗宽度的百分比设置字体大小 */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    width: 80px; 
+    height: 40px; 
+}
+
+.side-buttons button:hover {
+    background-color: #ffcfc8;
+    color: rgb(28, 10, 10)
+}
+
+  .info {
+    text-align: left; /* 文本左对齐 */
+    padding: 20px; /* 内边距 */
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 10px; /* 圆角边框 */
+    background-color: #f9f9f9; /* 背景颜色 */
+    max-width: 600px; /* 最大宽度 */
+    margin: 0px auto 20px; /* 上外边距为0，左右外边距为20px，居中显示 */
+    color: #333; /* 文本颜色为黑色 */
+  }
+
+  .info p {
+      margin: 10px 0; /* 段落间距 */
+  }
+
+  .info strong {
+      color: #000; /* 加粗文本颜色为黑色 */
+  }

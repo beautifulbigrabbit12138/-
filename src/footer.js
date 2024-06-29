@@ -1,0 +1,17 @@
+document.writeln("<footer class='copyright'>");
+document.writeln("  <div class='wrapper>");
+document.writeln("    <div class='copyright-left'>");
+document.writeln("      <img src='../images/copyright_phtot.png' alt='copyright_phtot'>");
+document.writeln("    </div>");
+document.writeln("    <div class='copyright-right'>");
+document.writeln("      <ul class='social-media'>");
+document.writeln("        <li><a href='#'><img src='../images/social-media_3.png' alt='Facebook'></a></li>");
+document.writeln("        <li><a href='#'><img src='../images/social-media_1.png' alt='Twitter'></a></li>");
+document.writeln("        <li><a href='#'><img src='../images/social-media_4.png' alt='Tiktok'></a></li>");
+document.writeln("        <li><a href='#'><img src='../images/social-media_2.png' alt='Tiktok'></a></li>");
+document.writeln("      </ul>");
+document.writeln("      <p class='policy'>Policy</p>");
+document.writeln("      <p class='policy'>© 2024 EBU6305G26</p>");
+document.writeln("    </div>");
+document.writeln("  </div>");
+document.writeln("</footer>");

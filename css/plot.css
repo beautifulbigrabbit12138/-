@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "breath";
+  src: url("../font/NatureBreath.ttf") format("truetype");
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.image-right {
+  float: right;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 150px;
+}
+.image-left {
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 150px;
+}
+.clear {
+  clear: both;
+}
+p{
+  color: white;
+  line-height: 175%;
+  text-align: justify;
+}
+.header{
+  color: white;
+  font-size: 40px;
+  font-family: "breath";
+  margin-bottom: 30px;
+}
+.video-container {
+  text-align: center;
+  padding: 10%;
+}
+.play{
+  width:400px;
+  transition: width 0.3s; 
+  border-radius: 20px;
+}
+.play:hover {
+  width: 600px;
+}
+
+.side-buttons {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vw; /* 使用视窗宽度的百分比设置内边距 */
+  border-radius: 0.5vw; /* 使用视窗宽度的百分比设置边框半径 */
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1); /* 使用视窗宽度的百分比设置阴影 */
+}
+.bgm-button{
+  background-image: url('../images/Icon-Mute.png');
+  background-size: contain; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.side-buttons button {
+  margin-bottom: 1vw;
+  /* padding: 0.5vw 0.5vw; */
+  border: none;
+  border-radius: 0.5vw; 
+  background-color: #93301C;
+  color: white;
+  font-size: 1vw; /* 使用视窗宽度的百分比设置字体大小 */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  width: 80px; 
+  height: 40px; 
+}
+
+.side-buttons button:hover {
+  background-color: #ffcfc8;
+  color: rgb(28, 10, 10)
+}

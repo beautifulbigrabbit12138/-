@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurassic Park</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/behind.css">
+</head>
+
+<body>
+
+
+    <div id="header">
+        <a href="./home_page.html"><img src="../images/jurassic-park-2-logo-png-transparent.png" alt="Logo"></a>
+    </div>
+
+    <div id="menu">
+        <a href="./home_page.html" class="menu-button">THE FILMS</a>
+        <a href="./protagonist.html" class="menu-button">THE PROTAGONISTS</a>
+        <a href="./news1.html" class="menu-button">NEWS</a>
+        <a href="./behind.html" class="menu-button">BEHIND-THE -SCENE</a>
+    </div>
+
+    <div class="content" style="display: flex;align-items: center;flex-direction: column;">
+
+    </div>
+
+
+    <div class="behind">
+        <div class="behind_msg">
+            Synopsis of <br>
+            behind-the <br>
+            -scenes tidbits
+        </div>
+    </div>
+    <div class="more-title">
+        Behind-the-scenes sound
+    </div>
+    <video width="100%" controls muted>
+        <source src="../video/第四个视频.mp4" type="video/mp4">
+    </video>
+
+    <div class="side-buttons">
+        <button onclick="goBack()">BACK</button>
+        <button onclick="goToTop()">TOP</button>
+        <button onclick="goToHomePage()">HOME</button>
+        <audio src="../audio/Bgm.mp3" id="bgm" loop="loop"></audio>
+        <button class="bgm-button" id="bgmButton" onclick="toggleBGM()"></button>
+        <script src="../src/button.js"></script>
+    </div>
+
+
+    <footer class="copyright">
+        <img src="../images/footer_bg.png" alt="" />
+
+    </footer>
+
+</body>
+
+</html>

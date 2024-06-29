@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jurassic Park</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../css/home_page.css" />
+  </head>
+
+  <body>
+    <div>
+      <script src="../src/header.js"></script>
+    </div>
+
+    <div id="gallery">
+      <div class="image-container">
+        <img src="../images/photo_1.png" alt="photo_1" class="gallery-image" />
+        <a href="./plot_1.html" class="image-caption">Jurassic Park I</a>
+      </div>
+
+      <div class="image-container">
+        <img src="../images/photo_2.png" alt="photo_2" class="gallery-image" />
+        <a href="./plot_2.html" class="image-caption right"
+          >The Lost World : Jurassic Park</a
+        >
+      </div>
+
+      <div class="image-container">
+        <img src="../images/phtot_3.png" alt="photo_3" class="gallery-image" />
+        <a href="./plot_3.html" class="image-caption">Jurassic Park III</a>
+      </div>
+
+      <div class="image-container">
+        <img src="../images/phtot_4.png" alt="photo_4" class="gallery-image" />
+        <a href="./plot_2.html" class="image-caption right">Jurassic World I</a>
+      </div>
+
+      <div class="image-container">
+        <img src="../images/photo_5.png" alt="photo_5" class="gallery-image" />
+        <a href="./plot_3.html" class="image-caption">Jurassic World II</a>
+      </div>
+      <div class="side-buttons">
+        <!-- <button onclick="goBack()">BACK</button> -->
+        <button onclick="goToTop()">TOP</button>
+        <!-- <button onclick="goToHomePage()">HOME</button> -->
+        <audio src="../audio/Bgm.mp3" id="bgm" loop="loop"></audio>
+        <button class="bgm-button" id="bgmButton" onclick="toggleBGM()"></button>
+        <script src="../src/button.js"></script>
+      </div>
+    </div>
+
+    <footer class="copyright">
+      <img src="../images/footer_bg.png" alt="" />
+    </footer>
+  </body>
+</html>

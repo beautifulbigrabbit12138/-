@@ -1,0 +1,106 @@
+#gallery {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0px;
+  transition: color 0.3s, transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.image-container {
+  position: relative;
+  margin-bottom: 0;
+  overflow: hidden;
+
+}
+
+.image-caption {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: rgb(169, 11, 11);
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  /* font-size: 300%; */
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  font-size: 5vw;
+  transition: color 0.3s, transform 0.3s ease-in-out;
+}
+
+.image-caption:hover {
+  color: rgb(255, 33, 33);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+
+
+.gallery-image:hover {
+  transform: scale(1.2);
+}
+
+.image-caption.right {
+  top: 50%;
+  right: 23%;
+  transform: translate(50%, -50%);
+  color: rgb(133, 9, 9);
+  text-align: center;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 5vw;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s ease-in-out;
+}
+
+.image-caption.right:hover {
+  color: rgb(255, 33, 33);
+  transform: translate(50%, -50%) scale(1.1);
+}
+
+
+.side-buttons {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vw; /* 使用视窗宽度的百分比设置内边距 */
+  border-radius: 0.5vw; /* 使用视窗宽度的百分比设置边框半径 */
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1); /* 使用视窗宽度的百分比设置阴影 */
+}
+.bgm-button{
+  background-image: url('../images/Icon-Mute.png');
+  background-size: contain; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.side-buttons button {
+  margin-bottom: 1vw;
+  /* padding: 0.5vw 0.5vw; */
+  border: none;
+  border-radius: 0.5vw; 
+  background-color: #93301C;
+  color: white;
+  font-size: 1vw; /* 使用视窗宽度的百分比设置字体大小 */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  width: 80px; 
+  height: 40px; 
+}
+
+.side-buttons button:hover {
+  background-color: #ffcfc8;
+  color: rgb(28, 10, 10)
+}

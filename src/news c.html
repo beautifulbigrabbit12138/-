@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jurassic Park</title>
+<link rel="stylesheet" type="text/css" href="../css/styles.css">
+<link rel="stylesheet" type="text/css" href="../css/news c.css">  
+</head>
+<body>  
+
+    <div>
+        <script src="../src/header.js"></script>
+    </div>
+      
+    <div class="content" style="display: flex;align-items: center;flex-direction: column;">
+
+    </div>
+
+    <div class="news">
+        <div class="title">
+            NEWS
+        </div>
+        <div class="news_words">
+
+            The Jurassic era from 65 million years ago is brought back to life once more. As you step through that iconic gateway into the Jurassic world, you'll witness all of John Hammond's imaginings of the Jurassic era come to fruition! Lush tropical rainforests teeming with the unknown, majestic waterfalls, and mysterious lagoons, and of course... the prehistoric dinosaurs brought back to "life"! Isla Nublar, the Jurassic World, is a place full of wonders. Do you have the courage to venture into it and embark on an exhilarating adventure?
+
+        </div>
+
+        <div class="container">
+            <div class="image-container">
+                <div class="image-slider">
+                    <img src="../images/c1.png" alt="b1"> <!-- 图片1 -->
+                    <img src="../images/c2.png" alt="b2"> <!-- 图片2 -->
+                    <img src="../images/c3.png" alt="b3"> <!-- 图片3 -->
+                    <img src="../images/c4.png" alt="b4"> <!-- 图片4 -->
+                </div>
+                <div class="arrow arrow-left"><</div> <!-- 左箭头 -->
+                <div class="arrow arrow-right">></div> <!-- 右箭头 -->
+            </div>
+        </div>
+    
+        <script>
+            // JavaScript 代码
+            const imageSlider = document.querySelector('.image-slider');
+            const images = document.querySelectorAll('.image-slider img');
+            let currentIndex = 0; // 当前显示图片的索引
+        
+            document.querySelector('.image-container').addEventListener('mousemove', function(event) {
+                const containerWidth = this.offsetWidth; // 图片容器宽度
+                const x = event.clientX - this.getBoundingClientRect().left; // 光标位置相对于图片容器左侧的距离
+                const arrowLeft = document.querySelector('.arrow-left');
+                const arrowRight = document.querySelector('.arrow-right');
+
+                if (x < containerWidth / 2) { // 光标在图片左侧
+                    if (arrowLeft.style.display !== 'block') { // 如果左箭头未显示，则显示左箭头并隐藏右箭头
+                        arrowLeft.style.display = 'block';
+                        arrowRight.style.display = 'none';
+                    }
+                } else { // 光标在图片右侧
+                    if (arrowRight.style.display !== 'block') { // 如果右箭头未显示，则显示右箭头并隐藏左箭头
+                        arrowLeft.style.display = 'none';
+                        arrowRight.style.display = 'block';
+                    }
+                }
+            });
+
+            // 左箭头点击事件
+            document.querySelector('.arrow-left').addEventListener('click', function() {
+                // 切换到上一张图片
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                imageSlider.style.transform = `translateX(-${currentIndex * 100}%)`; // 滑动到指定图片位置
+            });
+
+            // 右箭头点击事件
+            document.querySelector('.arrow-right').addEventListener('click', function() {
+                // 切换到下一张图片
+                currentIndex = (currentIndex + 1 + images.length) % images.length;
+                imageSlider.style.transform = `translateX(-${currentIndex * 100}%)`; // 滑动到指定图片位置
+            });
+        </script>
+
+        <div class="news_words">
+
+            Before the publication of the "Jurassic Park" novel, four film companies participated in bidding for the adaptation rights. These included Warner Bros. with director Tim Burton, Columbia Pictures with "Superman" director Richard Donner, 20th Century Fox with filmmaker Joe Dante, and Universal Pictures with Spielberg.
+            <br><br>
+            Ultimately, Universal and Spielberg emerged victorious.
+            <br><br>
+            One theory suggests that Universal's success in acquiring the rights to "Jurassic Park" stemmed from its ownership of the theme park "Universal Studios." This IP not only allowed Universal to adapt the story into a film but also to develop it into amusement park attractions, maximizing and sustaining the IP's value. Universal's ownership of its own theme park also aligned perfectly with Michael Crichton's narrative, which critiqued a "dark version of Walt Disney" — a capitalist who transcends the creator and uses genetic technology to resurrect dinosaurs, placing them in a theme park for profit. This decision proved to be fruitful, as Jurassic Park annually attracted hundreds of thousands of visitors to Universal Studios, becoming an iconic theme park attraction.
+
+        </div>
+
+    </div>  
+
+    <div class="side-buttons">
+        <button onclick="goBack()">BACK</button>
+        <button onclick="goToTop()">TOP</button>
+        <button onclick="goToHomePage()">HOME</button>
+        <audio src="../audio/Bgm.mp3" id="bgm" loop="loop"></audio>
+        <button class="bgm-button" id="bgmButton" onclick="toggleBGM()"></button>
+        <script src="../src/button.js"></script>
+    </div>
+
+
+
+    <footer class="copyright">
+        <img src="../images/footer_bg.png" alt="" />
+        <!-- <div>
+            <script src="ButtonNavi.js"></script>
+        </div>
+        <div class="wrapper">
+            <div class="copyright-left">
+                <img src="../images/copyright_phtot.png" alt="copyright_phtot">
+            </div>
+            <div class="copyright-right">
+                <ul class="social-media">
+                    <li><a href="#"><img src="../images/social-media_3.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="../images/social-media_1.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="../images/social-media_4.png" alt="Tiktok"></a></li>
+                    <li><a href="#"><img src="../images/social-media_2.png" alt="Tiktok"></a></li>
+                </ul>
+                <p class="policy">Policy</p>
+                <p class="policy">© 2024 EBU6305G26</p>
+            </div>
+        </div> -->
+    </footer>
+
+</body>
+</html>

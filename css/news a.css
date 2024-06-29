@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "breath";
+    src: url("../font/NatureBreath.ttf") format("truetype");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* 将边框模型设置为border-box以更好地控制元素的尺寸 */
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.news {
+    width: 100%;
+    overflow: auto;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    font-size: 3vw; /* 使用视窗宽度的百分比设置字体大小 */
+    margin: 2vw auto; /* 使用视窗宽度的百分比设置边距 */
+    font-weight: bold;
+    color: #8D512D;
+    font-family: "breath";
+}
+
+.new_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw auto; /* 使用视窗宽度的百分比设置边距 */
+    text-align: center;
+}
+
+.news_words {
+    width: 80%;
+    padding: 2vw 0; /* 使用视窗宽度的百分比设置内边距 */
+    color: white;
+    font-family: "breath";
+    margin: 2vw auto; /* 使用视窗宽度的百分比设置边距 */
+}
+
+.news_img img{
+    max-width: 100%; /* 图片的最大宽度为其容器的100%，确保图片不会超出容器 */
+    height: auto; /* 让图片的高度自动调整，以保持其原始宽高比 */
+    display: block; /* 将图片设置为块级元素，确保它在其容器内占据整个宽度 */
+    margin: 0 auto; /* 居中显示图片 */
+}
+
+
+.side-buttons {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw; /* 使用视窗宽度的百分比设置内边距 */
+    border-radius: 0.5vw; /* 使用视窗宽度的百分比设置边框半径 */
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1); /* 使用视窗宽度的百分比设置阴影 */
+}
+.bgm-button{
+    background-image: url('../images/Icon-Mute.png');
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.side-buttons button {
+    margin-bottom: 1vw;
+    /* padding: 0.5vw 0.5vw; */
+    border: none;
+    border-radius: 0.5vw; 
+    background-color: #93301C;
+    color: white;
+    font-size: 1vw; /* 使用视窗宽度的百分比设置字体大小 */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    width: 80px; 
+    height: 40px; 
+}
+
+.side-buttons button:hover {
+    background-color: #ffcfc8;
+    color: rgb(28, 10, 10)
+}

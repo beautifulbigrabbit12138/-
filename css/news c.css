@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "breath";
+    src: url("../font/NatureBreath.ttf") format("truetype");
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.news {
+    width: 100%;
+    overflow: auto;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px auto;
+    font-weight: bold;
+    color: #8D512D;
+    font-family: "breath";
+}
+
+.news_words {
+    text-align: center;
+    width: 80%;
+    padding: 20px 0px;
+    color: white;
+    font-family: "breath";
+    margin: 20px auto;
+}
+
+.container {
+    font-weight: bold;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+
+}
+
+.image-container {
+    position: relative;
+    width: 500px; /* 图片容器宽度 */
+    height: 300px; /* 图片容器高度 */
+    overflow: hidden; /* 隐藏超出容器的部分 */
+}
+
+.image-slider {
+    display: flex;
+    transition: transform 0.5s ease; /* 添加过渡效果 */
+}
+
+.image-slider img {
+    width: 500px; /* 图片宽度 */
+    height: 300px; /* 图片高度 */
+}
+
+/* 左右箭头样式 */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+
+.side-buttons {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw; /* 使用视窗宽度的百分比设置内边距 */
+    border-radius: 0.5vw; /* 使用视窗宽度的百分比设置边框半径 */
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1); /* 使用视窗宽度的百分比设置阴影 */
+}
+.bgm-button{
+    background-image: url('../images/Icon-Mute.png');
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.side-buttons button {
+    margin-bottom: 1vw;
+    /* padding: 0.5vw 0.5vw; */
+    border: none;
+    border-radius: 0.5vw; 
+    background-color: #93301C;
+    color: white;
+    font-size: 1vw; /* 使用视窗宽度的百分比设置字体大小 */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    width: 80px; 
+    height: 40px; 
+}
+
+.side-buttons button:hover {
+    background-color: #ffcfc8;
+    color: rgb(28, 10, 10)
+}

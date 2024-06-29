@@ -1,0 +1,165 @@
+.news {
+    width: 100%;
+    overflow: auto;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    margin: 5% auto;
+    font-weight: bold;
+    color: #8D512D;
+    font-family: "breath";
+}
+
+.new_item {
+    width: 100%;
+    height: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.news_left {
+    width: 50%;
+    float: left;
+    height: auto;
+    font-size: 20px;
+    line-height: auto;
+    color: white;
+    font-family: "breath";
+    text-align: center;
+    position: relative;
+    transform: translateX(-100%); /* Initially position the elements off-screen */
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.news_left img {
+    width: 80%;
+    height: auto;
+    filter: none;
+    transition: filter 0.3s;
+}
+
+.news_left:hover img {
+    filter: blur(7px); 
+}
+
+.details {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0; /* 初始时隐藏文字 */
+    transition: opacity 0.3s; /* 添加过渡效果 */
+}
+
+.news_left:hover .details {
+    opacity: 1; /* 鼠标悬停时显示文字 */
+    font-size: 50px;
+}
+
+.news_right {
+    width: 50%;
+    float: right;
+    height: auto;
+    font-size: 20px;
+    line-height: auto;
+    color: white;
+    font-family: "breath";
+    text-align: center;
+    position: relative;
+    transform: translateX(100%); /* Initially position the elements off-screen */
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.news_right img {
+    width: 80%;
+    height: auto;
+    filter: none;
+    transition: filter 0.3s;
+}
+
+.news_right:hover img {
+    filter: blur(7px); 
+}
+.news_right:hover img {
+    filter: blur(7px); 
+}
+
+.news_right:hover .details {
+    opacity: 1; /* 鼠标悬停时显示文字 */
+    font-size: 50px;
+}
+.news_right:hover .details {
+    opacity: 1; /* 鼠标悬停时显示文字 */
+    font-size: 50px;
+}
+
+.news_title {
+    text-align: center;
+    font-size: 5%;
+    font-weight: bold;
+    color: #8D512D;
+    font-family: "breath";
+    margin: 20px auto;
+}
+.news_title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #8D512D;
+    font-family: "breath";
+    margin: 20px auto;
+}
+
+.in-view .news_left{
+    transform: translateX(0); /* Move the elements into view */
+    transition-delay: 0.3s; /* Add delay for staggered animation */
+}
+
+.in-view .news_right {
+    transform: translateX(0); /* Move the elements into view */
+    transition-delay: 0.3s; /* Add delay for staggered animation */
+}
+
+.side-buttons {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw; /* 使用视窗宽度的百分比设置内边距 */
+    border-radius: 0.5vw; /* 使用视窗宽度的百分比设置边框半径 */
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1); /* 使用视窗宽度的百分比设置阴影 */
+}
+.bgm-button{
+    background-image: url('../images/Icon-Mute.png');
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.side-buttons button {
+    margin-bottom: 1vw;
+    /* padding: 0.5vw 0.5vw; */
+    border: none;
+    border-radius: 0.5vw; 
+    background-color: #93301C;
+    color: white;
+    font-size: 1vw; /* 使用视窗宽度的百分比设置字体大小 */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    width: 80px; 
+    height: 40px; 
+}
+
+.side-buttons button:hover {
+    background-color: #ffcfc8;
+    color: rgb(28, 10, 10)
+}
